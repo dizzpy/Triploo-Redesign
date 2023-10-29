@@ -1,0 +1,430 @@
+/*! Variables start */
+:root {
+  /* Font Styles */
+  --mainfont: "Onest", sans-serif;
+
+  /* Color Variables */
+  --colorBlueMain: #22577a;
+  --colorBlack: #010101;
+  --colorSecondYellow: #f7e8cf;
+  --colorYellow: #eaab44;
+  --colorGray: #606566;
+  --colorWhite: #fdfdfd;
+  --colorBackground: #f3f8ff;
+}
+
+body {
+  font-family: var(--mainfont) !important;
+  cursor: default;
+  height: 100vh;
+  background-color: var(--colorBackground);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Reset Styles */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* Text Selection Styles */
+::-moz-selection {
+  color: var(--colorBlack);
+  background: var(--colorYellow);
+}
+
+/* Page selection colos  */
+::selection {
+  color: var(--colorWhite);
+  background: var(--colorYellow);
+}
+
+.D-Active {
+  color: var(--colorYellow) !important;
+}
+
+/*! Variables End */
+
+/* styles start here */
+
+/* 
+========================================================
+                  Nav Bar
+========================================================
+*/
+
+.main-logo {
+  width: 110px;
+  flex-shrink: 0;
+}
+
+.nav-link {
+  color: var(--colorBlueMain) !important;
+  font-family: var(--mainfont);
+  font-size: 18px !important;
+  font-weight: 500 !important;
+  letter-spacing: 1px !important;
+}
+
+.nav-link:hover {
+  color: var(--colorYellow) !important;
+}
+
+.D-Button-Primary {
+  width: 136px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  box-shadow: 0px 4px 16px 0px rgba(34, 87, 122, 0.25);
+  background: var(--colorBlueMain);
+  color: var(--colorWhite);
+  border-color: transparent;
+  transition: 10ms;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.D-Button-Primary:hover {
+  background-color: var(--colorYellow) !important;
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+.nav-item {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 5px;
+}
+
+.navbar {
+  background-color: var(--colorBackground) !important;
+  border-radius: 12px;
+  margin-top: 10px;
+  box-shadow: 0px 3.22353px 14.50588px 0px rgba(34, 87, 122, 0.15);
+}
+
+.d-NavContainerFluid {
+  background-color: var(--colorWhite) !important;
+  width: 100%;
+}
+
+/* 
+========================================================
+              Hero Section
+========================================================
+*/
+
+/* caro start */
+.carosel {
+  margin-top: 100px;
+  height: 550px !important;
+  /*   */
+  border-radius: 12px;
+  /* background-image: url("../images/hero images/caroselArugambe.png"); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 5s;
+
+  animation-name: animate;
+  animation-direction: alternate-reverse;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out;
+  animation-duration: 20s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-image: url("../images/carousel-images/carosel18Bond.png");
+  }
+
+  20% {
+    background-image: url("../images/carousel-images/caroselPeacock.png");
+  }
+
+  40% {
+    background-image: url("../images/carousel-images/caroselElle.png");
+  }
+
+  60% {
+    background-image: url("../images/carousel-images/caroselArugambe.png");
+  }
+
+  80% {
+    background-image: url("../images/carousel-images/caroselSigiriya.png");
+  }
+
+  100% {
+    background-image: url("../images/carousel-images/caroselSigiriya.png");
+  }
+}
+
+/* caro end */
+
+/* Search box start */
+.D-backBox {
+  height: auto;
+  border-radius: 16px;
+  background: var(--colorWhite);
+  box-shadow: 0px 2px 30px 0px rgba(182, 182, 182, 0.25);
+}
+
+/* links ==> search bar */
+
+.form-input {
+  height: 44px;
+  text-indent: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #efefef;
+  box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.02);
+}
+
+.form-input:focus {
+  border: none;
+  background-color: #efefef;
+  box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.02);
+}
+
+/* Search box end */
+
+/* Scroll button animation */
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.circle {
+  margin-top: -10px;
+  animation: circle 1s ease-in-out infinite alternate;
+}
+
+.D-scrollText {
+  margin-top: 30px;
+  font-size: 15px;
+  font-family: var(--mainfont);
+  font-weight: 700;
+  color: var(--colorBlueMain);
+}
+
+.ri-arrow-down-double-line {
+  font-size: 50px;
+  color: var(--colorBlueMain);
+  font-size: 30px;
+}
+
+@keyframes circle {
+  0% {
+    transform: translateY(-5px);
+  }
+
+  100% {
+    transform: translateY(5px);
+  }
+}
+
+/* 
+========================================================
+            Destination Section
+========================================================
+*/
+
+.D-DestinationSection {
+  background: #22577a;
+  height: auto;
+}
+
+/* 
+========================================================
+            Why Choose Us Section
+========================================================
+*/
+
+/* .D-WhayChooseUs{
+    background-color: #eaab44;
+} */
+
+.D-WhyText {
+  color: var(--colorBlueMain) !important;
+}
+
+.ri-megaphone-line {
+  font-size: 50px;
+}
+
+.D-Cards {
+  box-shadow: 0px 3.01913px 13.58607px 0px rgba(47, 86, 112, 0.027);
+  transition: .3s linear;
+}
+
+.D-Cards:hover {
+  box-shadow: 0px 3.01913px 13.58607px 0px rgba(34, 87, 122, 0.11);
+  transform: scale(1.02);
+}
+
+
+/* 
+========================================================
+                 Shop Section
+========================================================
+*/
+
+
+.D-ShopSection {
+  background-color: var(--colorBlueMain) !important;
+  height: auto;
+}
+
+
+/* 
+========================================================
+              Hotels Section
+========================================================
+*/
+
+
+.d-hotels-MainText {
+  color: var(--colorBlueMain);
+  font-family: var(--mainfont);
+  font-size: 37px;
+  ;
+  font-weight: 700;
+  letter-spacing: 0.37px;
+}
+
+/* 
+========================================================
+              Reviews Section
+========================================================
+*/
+
+.d-reviews-MainText {
+  color: var(--colorWhite);
+  font-family: var(--mainfont);
+  font-size: 37px;
+  font-weight: 700;
+  letter-spacing: 0.37px;
+}
+
+.d-reviews-ContainerFluid {
+  width: 100%;
+  height: auto;
+  background: var(--colorBlueMain);
+}
+
+.d-rev-ProfilePhoto {
+  height: 70px;
+  width: 70px;
+  border-radius: 25px;
+  margin-top: 10px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+/* card name */
+.d-rev-Name {
+  color: var(--colorBlueMain);
+  font-family: var(--mainfont);
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.d-rev-position {
+  color: #adadad;
+  font-size: 18px;
+  text-align: center;
+}
+
+.d-rev-description {
+  font-size: 16px;
+  text-align: justify;
+  padding: 5px 5px;
+  font-weight: 500;
+  color: var(--colorGray);
+}
+
+
+
+/* 
+========================================================
+              News Alert Section
+========================================================
+*/
+
+.d-news-title {
+  margin-bottom: 10px;
+  color: var(--colorBlueMain);
+  font-family: var(--mainfont);
+  font-size: 37px;
+  font-weight: 700;
+  letter-spacing: 0.37px;
+}
+
+/* 
+========================================================
+              Footer Section
+========================================================
+*/
+
+.D-FooterContainer {
+  background-color: var(--colorBlueMain);
+}
+
+.footer-heading {
+  color: var(--colorWhite);
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 25px;
+}
+
+.ri-checkbox-circle-line {
+  margin-right: 5px;
+}
+
+.D-FooterLinks {
+  color: #e6e6e6;
+  text-decoration: none;
+  font-weight: 400;
+  letter-spacing: 0.05px;
+  font-size: 15px;
+}
+
+.D-FooterLinks:hover {
+  color: var(--colorYellow);
+}
+
+.ri-heart-3-fill {
+  color: rgb(255, 59, 59);
+}
+
+.D-FooterLinkText {
+  font-weight: 500;
+  letter-spacing: .8px;
+  color: var(--colorYellow) !important;
+}
+
+.D-FooterLinkText:hover {
+  color: var(--colorWhite) !important;
+}
+
+.D-copyright {
+  color: var(--colorWhite);
+}
