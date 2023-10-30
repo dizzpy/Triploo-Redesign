@@ -37,8 +37,24 @@
   height: 60px !important;
 }
 
+.space-tb-70 {
+  height: 70px !important;
+}
+
+.space-tb-80 {
+  height: 80px !important;
+}
+
+.space-tb-90 {
+  height: 90px !important;
+}
+
 .space-tb-100 {
   height: 100px !important;
+}
+
+.space-tb-150 {
+  height: 150px !important;
 }
 
 .space-tb-50 {

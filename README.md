@@ -1,1 +1,0 @@
-# Triploo-Redesign
