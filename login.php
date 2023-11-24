@@ -85,7 +85,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
   <div class="container-fluid">
     <div class="container fixed-top">
       <nav class="navbar navbar-expand-lg bg-body-tertiary px-4 py-0 mt-4 d-NavContainerFluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/index.html">
           <img src="/images/logos/logoPrimary.svg" alt="MainLogo" class="main-logo" />
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -119,17 +119,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             </li>
           </ul>
           <div class="d-flex justify-content-center g-4">
-            <a href="login.php" target="_blank">
-              <button class="D-Button-Primary text-center">
-                Login
-              </button>
-            </a>
-            <div>
-              <!-- <a href="profile.php">
-                <img src="https://placehold.co/45" alt="Profile Icon" class="D-MainAccountPFP" id="D-MainAccountPFP">
-              </a> -->
-            </div>
-            
+              
           </div>
         </div>
       </nav>

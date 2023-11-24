@@ -23,7 +23,7 @@ $user_data = check_login($con);
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
 
   <!-- External CSS file -->
-  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/css/style.css" />
 
   <!-- Utilities Css file -->
   <link rel="stylesheet" href="/css/utilities.css">
@@ -65,7 +65,7 @@ $user_data = check_login($con);
   <div class="container-fluid">
     <div class="container fixed-top">
       <nav class="navbar navbar-expand-lg bg-body-tertiary px-4 py-0 mt-4 d-NavContainerFluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/index.html">
           <img src="/images/logos/logoPrimary.svg" alt="MainLogo" class="main-logo" />
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -99,17 +99,7 @@ $user_data = check_login($con);
             </li>
           </ul>
           <div class="d-flex justify-content-center g-4">
-            <a href="login.php" target="_blank">
-              <button class="D-Button-Primary text-center">
-                Login
-              </button>
-            </a>
-            <div>
-              <!-- <a href="profile.php">
-                <img src="https://placehold.co/45" alt="Profile Icon" class="D-MainAccountPFP" id="D-MainAccountPFP">
-              </a> -->
-            </div>
-            
+              
           </div>
         </div>
       </nav>
