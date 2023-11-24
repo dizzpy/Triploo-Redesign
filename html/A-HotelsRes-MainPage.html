@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triploo | Hotels</title>
+
+    <!-- Fav Icon -->
+    <link rel="icon" href="/images/logos/favIconPng.png" />
+
+    <!-- link bootstrap file -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+    <!-- external css file -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/pages/A-HotelsRes-MainPage.css">
+
+    <!-- remix icon cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css">
+
+    <!-- Google font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&family=Lato:wght@700&family=Onest:wght@100;200;300;400;500;600;700;800;900&family=Source+Sans+3:wght@600&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- Nav Bars start -->
+  <div class="container-fluid">
+    <div class="container fixed-top">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary px-4 py-0 mt-4 d-NavContainerFluid">
+        <a class="navbar-brand" href="/index.html">
+          <img src="/images/logos/logoPrimary.svg" alt="MainLogo" class="main-logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link D-Active" href="/index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/html/J-PackagesMain.html">Packages</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/html/T-Shop-MainPage.html">Shop</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/html/M-Blog-MainPage.html">Blog</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/html/about-us.html">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="/html/contact-us.html">Contact</a>
+            </li>
+          </ul>
+          <div class="d-flex justify-content-center g-4">
+              
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!-- NavBar end -->
+
+
+    <!-- head text main -->
+    <div class="j-SectionPadding"></div>
+
+    <div class="container">
+        <div class="row">
+            <!-- all text area -->
+            <div class="col-md-6">
+                <h1 class="A-ResMAinText">
+                    Discover Your Next <br> Adventure
+                </h1>
+                <p class="A-ResMAinDescription">
+                    Lorem ipsum dolor sit amet consectetur. Id amet eget tincidunt risus porttitor posuere quis urna id.
+                    Commodo adipiscing lacinia pretium laoreet pharetra id a mi. Blandit sagittis augue ac in
+                    ullamcorper non. In luctus posuere quis purus dui integer id.
+                </p>
+                <div class="col-md-10">
+                    <div class="row">
+                        <div class="col-4 text-center">
+                            <a href="/html/Hotels/A-Hotel-Ella.html">
+                                <p class="A-Res-CityItem py-1">
+                                    <span><i class="ri-map-pin-line"></i></span> Ella
+                                </p>
+                            </a>
+                        </div>
+                        <div class="col-4 text-center">
+                            <a href="/html/Hotels/A-Hotel-Kandy.html">
+                                <p class="A-Res-CityItem py-1">
+                                    <span><i class="ri-map-pin-line"></i></span> Kandy
+                                </p>
+                            </a>
+                        </div>
+                        <div class="col-4 text-center">
+                            <a href="/html/Hotels/A-Hotel-Galle.html">
+                                <p class="A-Res-CityItem py-1">
+                                    <span><i class="ri-map-pin-line"></i></span> Galle
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- image area -->
+            <div class="col-md-6 text-center mt-3">
+                <img src="/images/hotels-img/hotel-cards/head-cover-art copy.jpg" alt="" style="border-radius: 12px;">
+            </div>
+        </div>
+
+        <!-- search bar -->
+        <div class="A-SearchBarDiv mt-5">
+            <div class="row">
+                <div class="form row g-3 justify-content-center mb-4">
+                    <div class="col-md-8 col-sm-10 col-9">
+                        <div class="search-container">
+                            <input type="text" id="search-input" placeholder="Search for places in Sri Lanka" onfocus="showSuggestions()" class="form-control form-input">
+                            <ul id="suggestions"></ul>
+                        </div>
+                    </div>
+                </div>
+                <ul id="suggestions"></ul>
+            </div>
+        </div>
+
+        <!-- header text -->
+        <h1 class="A-ResMAinText text-center mt-4 mb-5">
+            Best Picks for You
+        </h1>
+
+        <!-- Card Row start -->
+        <div class="row g-5 mb-5">
+            <!-- First card -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/images/hotels-img/hotel-cards/shangrilla.jpg" class="card-img-top" alt="...">
+                    <div class="card-body py-3">
+                        <h1 class="A-Res-CardTitle">
+                            Shangri La Luxury Hotel
+                        </h1>
+                        <p class="A-Res-CarsLocationTag">
+                            <span class="ri-map-pin-2-line"></span> Colombo
+                        </p>
+                        <p class="A-Res-RoomMiniDetails">
+                            1 night , 2 adults
+                        </p>
+                        <h2 class="A-Res-CardPrice">
+                            $125.69
+                        </h2>
+                        <p class="A-Res-OldPrice">
+                            <strike>
+                                $230.69
+                            </strike>
+                        </p>
+                        <p class="A-Res-Description01">
+                            Superior King Room with Complimentary City Tour & Access to Beach Lounge
+                        </p>
+                        <div class="A-Res-Description02Div">
+                            <p class="A-Res-Description02Text">
+                                one extra-large double bed
+                            </p>
+                            <ul>
+                                <li class="p A-Res-Description02Text">
+                                    Free cancellation
+                                </li>
+                                <li class="p A-Res-Description02Text">
+                                    No prepayment needed – pay at the property
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second card -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/images/hotels-img/hotel-cards/Anasa Wellness.jpg" class="card-img-top" alt="...">
+                    <div class="card-body py-3">
+                        <h1 class="A-Res-CardTitle">
+                            Anasa Wellness Resort
+                        </h1>
+                        <p class="A-Res-CarsLocationTag">
+                            <span class="ri-map-pin-2-line"></span> sigiriya
+                        </p>
+                        <p class="A-Res-RoomMiniDetails">
+                            1 night , 2 adults
+                        </p>
+                        <h2 class="A-Res-CardPrice">
+                            $67.98
+                        </h2>
+                        <p class="A-Res-OldPrice">
+                            <strike>
+                                $124.65
+                            </strike>
+                        </p>
+                        <p class="A-Res-Description01">
+                            Superior King Room with Complimentary City Tour & Access to Beach Lounge
+                        </p>
+                        <div class="A-Res-Description02Div">
+                            <p class="A-Res-Description02Text">
+                                one extra-large double bed
+                            </p>
+                            <ul>
+                                <li class="p A-Res-Description02Text">
+                                    Free cancellation
+                                </li>
+                                <li class="p A-Res-Description02Text">
+                                    No prepayment needed – pay at the property
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Third card -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/images/hotels-img/hotel-cards/blue water beach resort.jpg" class="card-img-top" alt="...">
+                    <div class="card-body py-3">
+                        <h1 class="A-Res-CardTitle">
+                            blue water beach resort
+                        </h1>
+                        <p class="A-Res-CarsLocationTag">
+                            <span class="ri-map-pin-2-line"></span> trincomalee
+                        </p>
+                        <p class="A-Res-RoomMiniDetails">
+                            1 night , 2 adults
+                        </p>
+                        <h2 class="A-Res-CardPrice">
+                            $98.43
+                        </h2>
+                        <p class="A-Res-OldPrice">
+                            <strike>
+                                $130.69
+                            </strike>
+                        </p>
+                        <p class="A-Res-Description01">
+                            Superior King Room with Complimentary City Tour & Access to Beach Lounge
+                        </p>
+                        <div class="A-Res-Description02Div">
+                            <p class="A-Res-Description02Text">
+                                one extra-large double bed
+                            </p>
+                            <ul>
+                                <li class="p A-Res-Description02Text">
+                                    Free cancellation
+                                </li>
+                                <li class="p A-Res-Description02Text">
+                                    No prepayment needed – pay at the property
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Forth card -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/images/hotels-img/hotel-cards/LAKE FOREST.jpg" class="card-img-top" alt="...">
+                    <div class="card-body py-3">
+                        <h1 class="A-Res-CardTitle">
+                            Lake Forest Resort
+                        </h1>
+                        <p class="A-Res-CarsLocationTag">
+                            <span class="ri-map-pin-2-line"></span> Anuradhapura
+                        </p>
+                        <p class="A-Res-RoomMiniDetails">
+                            1 night , 2 adults
+                        </p>
+                        <h2 class="A-Res-CardPrice">
+                            $58.87
+                        </h2>
+                        <p class="A-Res-OldPrice">
+                            <strike>
+                                $127.22
+                            </strike>
+                        </p>
+                        <p class="A-Res-Description01">
+                            Superior King Room with Complimentary City Tour & Access to Beach Lounge
+                        </p>
+                        <div class="A-Res-Description02Div">
+                            <p class="A-Res-Description02Text">
+                                one extra-large double bed
+                            </p>
+                            <ul>
+                                <li class="p A-Res-Description02Text">
+                                    Free cancellation
+                                </li>
+                                <li class="p A-Res-Description02Text">
+                                    No prepayment needed – pay at the property
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Fifth card -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/images/hotels-img/hotel-cards/trinco-blu.jpg" class="card-img-top" alt="...">
+                    <div class="card-body py-3">
+                        <h1 class="A-Res-CardTitle">
+                            Trinco Blu by Cinnamon
+                        </h1>
+                        <p class="A-Res-CarsLocationTag">
+                            <span class="ri-map-pin-2-line"></span> trincomalee
+                        </p>
+                        <p class="A-Res-RoomMiniDetails">
+                            1 night , 2 adults
+                        </p>
+                        <h2 class="A-Res-CardPrice">
+                            $61.98
+                        </h2>
+                        <p class="A-Res-OldPrice">
+                            <strike>
+                                $97.66
+                            </strike>
+                        </p>
+                        <p class="A-Res-Description01">
+                            Superior King Room with Complimentary City Tour & Access to Beach Lounge
+                        </p>
+                        <div class="A-Res-Description02Div">
+                            <p class="A-Res-Description02Text">
+                                one extra-large double bed
+                            </p>
+                            <ul>
+                                <li class="p A-Res-Description02Text">
+                                    Free cancellation
+                                </li>
+                                <li class="p A-Res-Description02Text">
+                                    No prepayment needed – pay at the property
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sixth card -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/images/hotels-img/hotel-cards/sigiriya villege.jpg" class="card-img-top" alt="...">
+                    <div class="card-body py-3">
+                        <h1 class="A-Res-CardTitle">
+                            sigirya villege hotel
+                        </h1>
+                        <p class="A-Res-CarsLocationTag">
+                            <span class="ri-map-pin-2-line"></span> sigiriya
+                        </p>
+                        <p class="A-Res-RoomMiniDetails">
+                            1 night , 2 adults
+                        </p>
+                        <h2 class="A-Res-CardPrice">
+                            $76.43
+                        </h2>
+                        <p class="A-Res-OldPrice">
+                            <strike>
+                                $89.00
+                            </strike>
+                        </p>
+                        <p class="A-Res-Description01">
+                            Superior King Room with Complimentary City Tour & Access to Beach Lounge
+                        </p>
+                        <div class="A-Res-Description02Div">
+                            <p class="A-Res-Description02Text">
+                                one extra-large double bed
+                            </p>
+                            <ul>
+                                <li class="p A-Res-Description02Text">
+                                    Free cancellation
+                                </li>
+                                <li class="p A-Res-Description02Text">
+                                    No prepayment needed – pay at the property
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Card Row end -->
+
+        <!-- advertisement -->
+        <div class="text-center py-5">
+            <img src="/images/hotels-img/hotel-cards/banner.jpg" class="card-img-banner card-img-top" alt="...">
+        </div>
+        
+    </div>
+
+
+
+
+
+      <!-- 
+      =======================================
+                Footer Section
+      =======================================
+  -->
+
+  <footer class="D-FooterContainer">
+    <div class="container D-SectionPadding">
+      <div class="row pt-4">
+        <div class="col-md-3 col-lg-6 order-md-last">
+          <div class="row justify-content-end">
+            <div class="col-md-12 col-lg-9 text-md-right mb-md-0 mb-4">
+              <h2 class="footer-heading"><a href="#" class="logo">
+                  <img src="/images/logos/logoWhite.svg" alt="FooterLogo" style="width: 155px;">
+                </a></h2>
+              <p class="D-copyright">
+                Copyright &copy;
+                <script>document.write(new Date().getFullYear());</script> All rights reserved | This
+                Site Developed <i class="ri-heart-3-fill" aria-hidden="true"></i> by <a
+                  href="https://github.com/dizzpy/" target="_blank" class="D-FooterLinks">
+                  <span class="D-FooterLinkText">
+                    moduleZ
+                  </span>
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-9 col-lg-6">
+          <div class="row">
+            <div class="col-md-4 mb-md-0 mb-4">
+              <h2 class="footer-heading">Information</h2>
+              <ul class="list-unstyled">
+                <li><a href="/html/about-us.html" class="py-1 d-block D-FooterLinks"><span class="ri-checkbox-circle-line"></span>Packages</a></li>
+                <li><a href="/html/T-Shop-MainPage.html" class="py-1 d-block D-FooterLinks"><span
+                      class="ri-checkbox-circle-line mr-2"></span>Shop</a></li>
+                <li><a href="/html/M-Blog-MainPage.html" class="py-1 d-block D-FooterLinks"><span
+                      class="ri-checkbox-circle-line mr-2"></span>Blog</a></li>
+                <li><a href="/html/contact-us.html" class="py-1 d-block D-FooterLinks"><span
+                      class="ri-checkbox-circle-line mr-2"></span>Contact US</a></li>
+                <li><a href="/html/about-us.html" class="py-1 d-block D-FooterLinks"><span
+                      class="ri-checkbox-circle-line mr-2"></span>About</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4 mb-md-0 mb-4">
+              <h2 class="footer-heading">Others</h2>
+              <ul class="list-unstyled">
+                <li><a href="https://www.privacypolicygenerator.info/live.php?token=dMFLjGaYsEvNVQ8XTlVOyb83dg8Z9tuS" class="py-1 d-block D-FooterLinks"><span
+                      class="ri-checkbox-circle-line mr-2"></span>Privacy Policy</a></li>
+                <li><a href="/html/terms.html" class="py-1 d-block D-FooterLinks"><span
+                      class="ri-checkbox-circle-line mr-2"></span>Terms and Conditions</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+    <!-- bootstrap 5 js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- search bar -->
+    <script>
+        const placesInSriLanka = [
+    "Anuradhapura",
+    "Dambulla",
+    "Ella",
+    "Kandy",
+    "Galle",
+    "Jaffna",
+    "Mirissa",
+    "NuwaraEliya",
+    "Polonaruwa",
+    "Udawalawa",
+    "Trinco"
+];
+
+const searchInput = document.getElementById("search-input");
+const suggestionsList = document.getElementById("suggestions");
+
+function showSuggestions() {
+    suggestionsList.innerHTML = "";
+
+    placesInSriLanka.forEach(place => {
+        const listItem = document.createElement("li");
+        listItem.textContent = place;
+        listItem.addEventListener("click", function() {
+            const fileName = `/html/Hotels/A-Hotel-${place}.html`; // Adjust the path to the HTML files
+            window.location.href = fileName;
+        });
+        suggestionsList.appendChild(listItem);
+    });
+
+    suggestionsList.style.display = "block";
+}
+
+searchInput.addEventListener("input", function() {
+    const inputText = searchInput.value.toLowerCase();
+    suggestionsList.innerHTML = "";
+
+    if (inputText.length === 0) {
+        suggestionsList.style.display = "none";
+        return;
+    }
+
+    const matchingPlaces = placesInSriLanka.filter(place => place.toLowerCase().includes(inputText));
+
+    matchingPlaces.slice(0, 10).forEach(place => {
+        const listItem = document.createElement("li");
+        listItem.textContent = place;
+        listItem.addEventListener("click", function() {
+            const fileName = `html/Hotels/A-Hotel-${place}.html`; // Adjust the path to the HTML files
+            window.location.href = fileName;
+        });
+        suggestionsList.appendChild(listItem);
+    });
+
+    if (matchingPlaces.length > 0) {
+        suggestionsList.style.display = "block";
+    } else {
+        suggestionsList.style.display = "none";
+    }
+});
+
+document.addEventListener("click", function(e) {
+    if (e.target !== searchInput) {
+        suggestionsList.style.display = "none";
+    }
+});
+
+    </script>
+</body>
+
+</html>

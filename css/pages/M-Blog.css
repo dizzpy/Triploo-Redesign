@@ -1,0 +1,252 @@
+/*! Variables start */
+:root {
+    /* Font Styles */
+    --mainfont: "Onest", sans-serif;
+
+    /* Color Variables */
+    --colorBlueMain: #22577a;
+    --colorBlack: #010101;
+    --colorSecondYellow: #f7e8cf;
+    --colorYellow: #eaab44;
+    --colorGray: #606566;
+    --colorWhite: #fdfdfd;
+    --colorBackground: #f3f8ff;
+}
+
+.SectionMarginTop {
+    margin-top: 130px;
+}
+
+/* heading image */
+.m-blogMainImage {
+    border-radius: 16px;
+    width: 80%;
+}
+
+.m-TagItem {
+    border: 1.5px solid var(--colorBlueMain);
+    color: var(--colorBlueMain);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    border-radius: 12px;
+}
+.m-TagItem:hover{
+    cursor: pointer;
+    color: var(--colorYellow);
+
+}
+
+.m-SectionHeadingText {
+    color: var(--colorBlueMain);
+    font-size: 35px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+/* card deco */
+.m-blogCardImage {
+    height: 100%;
+}
+
+.m-BlogCard {
+    border-radius: 12px;
+    background: #FFF;
+    box-shadow: 0px 4px 18px 0px rgba(34, 87, 122, 0.15);
+}
+
+/* .m-blogCardImage{
+    border-radius: 20px;
+} */
+
+.m-blogCardText {
+    color: var(--colorBlueMain);
+    font-size: 28;
+    font-weight: 700;
+    letter-spacing: 1.167px;
+}
+
+.m-blogCardDesText {
+    color: var(--colorBlueMain);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.39px;
+}
+
+/* see more button style start */
+.cta {
+    border: none;
+    background: none;
+}
+
+.cta span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 12px;
+    padding-right: 15px;
+    text-transform: uppercase;
+}
+
+.cta svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+}
+
+.cta:hover svg {
+    transform: translateX(0);
+}
+
+.cta:active svg {
+    transform: scale(0.9);
+}
+
+.hover-underline-animation {
+    position: relative;
+    color: var(--colorBlueMain);
+    padding-bottom: 20px;
+}
+
+.hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--colorBlueMain);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.cta:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* see more button style end */
+
+.m-blogCardDesText {
+    color: var(--colorBlueMain);
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.39px;
+}
+
+.m-BlogCardImg {
+    border-radius: 25px !important;
+}
+
+.m-cardBlog {
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 0px 4px 18px 0px rgba(34, 87, 122, 0.15);
+    opacity: 1;
+    transition: .6s;
+}
+
+.m-cardBlog:hover{
+    transform: translateX(10px);
+}
+
+.m-cardBlog.hidden {
+    opacity: 0;
+    display: none;
+}
+
+.m-blogCardTitle {
+    color: var(--colorBlueMain);
+    font-size: 35px;
+    font-weight: 700;
+    letter-spacing: 1.167px;
+}
+
+.m-blogCardText {
+    color: #22577A;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.39px;
+}
+
+/* blog post page start */
+.m2-BlogHeadingText {
+    color: var(--colorBlueMain);
+    font-size: 70;
+    font-weight: 800;
+    letter-spacing: 2.143px;
+    margin-top: 100px;
+}
+
+.m2-AllContainer{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.m2-BlogImg{
+    width: 100%;
+    height: 100%;
+}
+
+.m2BlogDescription {
+    color: #22577A;
+    text-align: justify;
+    font-size: 19px;
+    font-weight: 400;
+    letter-spacing: 1.04px;
+}
+/* blog post page end */
+
+
+
+
+/* 
+========================================================
+              Footer Section
+========================================================
+*/
+
+.D-FooterContainer {
+    background-color: var(--colorBlueMain);
+  }
+  
+  .footer-heading {
+    color: var(--colorWhite);
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 25px;
+  }
+  
+  .ri-checkbox-circle-line {
+    margin-right: 5px;
+  }
+  
+  .D-FooterLinks {
+    color: #e6e6e6;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 0.05px;
+    font-size: 15px;
+  }
+  
+  .D-FooterLinks:hover {
+    color: var(--colorYellow);
+  }
+  
+  .ri-heart-3-fill {
+    color: rgb(255, 59, 59);
+  }
+  
+  .D-FooterLinkText {
+    font-weight: 500;
+    letter-spacing: .8px;
+    color: var(--colorYellow) !important;
+  }
+  
+  .D-FooterLinkText:hover {
+    color: var(--colorWhite) !important;
+  }
+  
+  .D-copyright {
+    color: var(--colorWhite);
+  }

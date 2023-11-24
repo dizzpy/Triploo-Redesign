@@ -1,0 +1,52 @@
+[
+  {
+    "image": "../images/activities-images/imgActivities-Galle.png",
+    "title": "Galle",
+    "city": "Galle City"
+  },
+  {
+    "image": "../images/activities-images/imgActivities-Ella.png",
+    "title": "Ella",
+    "city": "Anuradhapura City"
+  },
+  {
+    "image": "../images/activities-images/imgActivities-Udawalawa.png",
+    "title": "Udawalawa",
+    "city": "Kandy City"
+  },
+  {
+    "image": "../images/activities-images/imgActivities-Dambulla.png",
+    "title": "Dambulla",
+    "city": "Colombo City"
+  },
+  {
+    "image": "../images/activities-images/imgActivities-NuwaraEliya.png",
+    "title": "Nuwara Eliya",
+    "city": "Trincomalee City"
+  },
+  {
+    "image": "../images/activities-images/imgActivities-Anuradapura.png",
+    "title": "Anuradapura",
+    "city": "Nuwara Eliya City"
+  },
+  {
+    "image": "../images/activities-images/imgActivities-Polonaruwa.png",
+    "title": "Polonaruwa",
+    "city": "Jaffna City"
+  },
+  {
+    "image": "../images/activities-images/imgActivities-Jaffna.png",
+    "title": "Jaffna",
+    "city": "Matara City"
+  },
+  {
+    "image": "../images/activities-images/imgActivities-Kandy.png",
+    "title": "Kandy",
+    "city": "Hikkaduwa City"
+  },
+  {
+    "image": "../images/activities-images/imgActivities-Mirissa.png",
+    "title": "Mirissa",
+    "city": "Kalutara City"
+  }
+]

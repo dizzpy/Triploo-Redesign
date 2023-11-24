@@ -78,6 +78,7 @@ body::-webkit-scrollbar {
   color: var(--colorWhite);
   font-size: 18px;
 }
+
 /* Back To Top Button end */
 
 /* styles start here */
@@ -148,6 +149,12 @@ body::-webkit-scrollbar {
   width: 100%;
 }
 
+.D-MainAccountPFP{
+  border-radius: 100px;
+  border: 3px solid var(--colorBlueMain);
+  height: 45px;
+  width: 45px;
+}
 /* 
 ========================================================
               Hero Section
@@ -178,26 +185,32 @@ body::-webkit-scrollbar {
 @keyframes animate {
   0% {
     background-image: url("../images/carousel-images/carosel18Bond.png");
+    background-size: cover;
   }
 
   20% {
     background-image: url("../images/carousel-images/caroselPeacock.png");
+    background-size: cover;
   }
 
   40% {
     background-image: url("../images/carousel-images/caroselElle.png");
+    background-size: cover;
   }
 
   60% {
     background-image: url("../images/carousel-images/caroselArugambe.png");
+    background-size: cover;
   }
 
   80% {
     background-image: url("../images/carousel-images/caroselSigiriya.png");
+    background-size: cover;
   }
 
   100% {
     background-image: url("../images/carousel-images/caroselSigiriya.png");
+    background-size: cover;
   }
 }
 
@@ -216,17 +229,18 @@ body::-webkit-scrollbar {
 /* links ==> search bar */
 
 .form-input {
-  height: 44px;
+  height: 50px;
   text-indent: 10px;
   border-radius: 8px;
   font-size: 16px;
-  background-color: #efefef;
+  background-color: #ffffff;
   box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.02);
+  border: none;
 }
 
 .form-input:focus {
   border: none;
-  background-color: #efefef;
+  background-color: #ffffff;
   box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.02);
 }
 
@@ -292,8 +306,11 @@ body::-webkit-scrollbar {
   color: var(--colorBlueMain) !important;
 }
 
-.ri-megaphone-line {
-  font-size: 50px;
+.ri-map-2-line,
+.ri-pencil-line,
+.ri-customer-service-2-line {
+  font-size: 40px;
+  color: var(--colorGray);
 }
 
 .D-Cards {
@@ -384,7 +401,8 @@ body::-webkit-scrollbar {
 
 .d-rev-description {
   font-size: 16px;
-  text-align: justify;
+  /* text-align: justify; */
+  text-align: center;
   padding: 5px 5px;
   font-weight: 500;
   color: var(--colorGray);
@@ -405,6 +423,11 @@ body::-webkit-scrollbar {
   font-size: 37px;
   font-weight: 700;
   letter-spacing: 0.37px;
+}
+
+.D-MainPageNewAlertImage{
+  height: 320px;
+  width: 320px;
 }
 
 /* 

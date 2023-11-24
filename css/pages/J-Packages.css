@@ -1,0 +1,149 @@
+/*! Variables start */
+:root {
+    /* Font Styles */
+    --mainfont: "Onest", sans-serif;
+  
+    /* Color Variables */
+    --colorBlueMain: #22577a;
+    --colorBlack: #010101;
+    --colorSecondYellow: #f7e8cf;
+    --colorYellow: #eaab44;
+    --colorGray: #606566;
+    --colorWhite: #fdfdfd;
+    --colorBackground: #f3f8ff;
+  }
+
+.SectionMarginTop{
+    margin-top: 150px;
+}
+
+.J-PackCardTopTitle{
+    background-color: var(--colorBlueMain);
+    border-radius: 8px 8px 0 0;
+}
+
+.J-PackCardTopTitleText {
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.87px;
+}
+
+.J-PackCardBlog{
+    transition: .6s;
+}
+
+.J-PackCardBlog:hover{
+    transform: translateX(10px);
+}
+
+.J-PackCardText{
+    color: #22577A;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.39px;
+    text-align: justify;
+}
+
+.J-PackCardTitle {
+    color: var(--colorBlueMain);
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: 1.167px;
+}
+
+.J-PackCardTitleSeco{
+    color: var(--colorBlueMain);
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 1.167px;
+}
+
+
+.J-PackCardPrice{
+    color: #22577A;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.39px;
+}
+
+.J-PackCardBackGround {
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 0px 4px 18px 0px rgba(34, 87, 122, 0.15);
+}
+
+/* all content start here */
+.J-PackMainText {
+    color: var(--colorBlueMain);
+    text-align: center;
+    font-family: var(--mainfont);
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 1.35px;
+}
+
+.J-SubTextMain {
+    color: var(--colorBlueMain);
+    font-family: var(--mainfont);
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: 0.78px;
+}
+
+.J-SubTextSec {
+    color: var(--colorBlueMain);
+    font-family: var(--mainfont);
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.78px;
+}
+
+.J-AccodianTitle {
+    color: var(--colorBlueMain);
+    font-family: var(--mainfont);
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+}
+
+.J-AccodianDetails {
+    color: var(--colorBlueMain);
+    font-family: var(--mainfont);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 33px;
+    letter-spacing: 0.16px;
+}
+
+.J--SectionTop {
+    margin-top: 50px;
+}
+
+.J-CardBody {
+    border-radius: 12px;
+    border: 1px solid #E9E9E9;
+    background: var(--colorWhite);
+    box-shadow: 0px 4px 18px 0px rgba(34, 87, 122, 0.15);
+}
+
+.J-OderCardTitle {
+    color: var(--colorBlueMain);
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2.4px;
+}
+
+.J-OderCardDescription01 {
+    color: #598CAE;
+    font-size: 21px;
+    font-weight: 600;
+    letter-spacing: 0.63px;
+}
+
+.J-OderCardDescription02 {
+    color: var(--colorBlueMain);
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.24px;
+}

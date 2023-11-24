@@ -1,0 +1,349 @@
+:root {
+    /* Font Styles */
+    --mainfont: "Onest", sans-serif;
+
+    /* Color Variables */
+    --colorBlueMain: #22577a;
+    --colorBlack: #010101;
+    --colorSecondYellow: #f7e8cf;
+    --colorYellow: #eaab44;
+    --colorGray: #606566;
+    --colorWhite: #fdfdfd;
+    --colorBackground: #f3f8ff;
+}
+
+/* nav bar start */
+
+/* 
+========================================================
+                  Nav Bar
+========================================================
+*/
+
+body {
+    font-family: var(--mainfont);
+}
+
+.main-logo {
+    width: 110px;
+    flex-shrink: 0;
+}
+
+.nav-link {
+    color: var(--colorBlueMain) !important;
+    font-family: var(--mainfont);
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    letter-spacing: 1px !important;
+}
+
+.nav-link:hover {
+    color: var(--colorYellow) !important;
+}
+
+.D-Button-Primary {
+    width: 136px;
+    height: 44px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    box-shadow: 0px 4px 16px 0px rgba(34, 87, 122, 0.25);
+    background: var(--colorBlueMain);
+    color: var(--colorWhite);
+    border-color: transparent;
+    transition: 10ms;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.D-Button-Primary:hover {
+    background-color: var(--colorYellow) !important;
+}
+
+.navbar-nav {
+    text-align: center;
+}
+
+.nav-item {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 5px;
+}
+
+.navbar {
+    background-color: var(--colorBackground) !important;
+    border-radius: 12px;
+    margin-top: 10px;
+    box-shadow: 0px 3.22353px 14.50588px 0px rgba(34, 87, 122, 0.15);
+}
+
+.d-NavContainerFluid {
+    background-color: var(--colorWhite) !important;
+    width: 100%;
+}
+
+/* nav bar end */
+
+/* all content  */
+.j-SectionPadding {
+    padding-top: 170px;
+}
+
+.A-ResMAinText {
+    color: var(--colorBlueMain);
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 1.389px;
+}
+
+.A-ResMAinDescription {
+    color: var(--colorBlueMain);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.497px;
+}
+
+.A-Res-CityItem {
+    background-color: var(--colorBlueMain);
+    color: var(--colorWhite);
+    border-radius: 20px;
+}
+
+.A-Res-CardTitle {
+    color: var(--colorBlueMain);
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+}
+
+.A-Res-CarsLocationTag,
+.ri-map-pin-2-line {
+    color: var(--colorBlueMain);
+    font-family: var(--mainfont);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1.037px;
+}
+
+.A-Res-RoomMiniDetails {
+    color: var(--colorGray);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.A-Res-CardPrice {
+    color: var(--colorBlueMain);
+    font-family: Onest;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.A-Res-OldPrice {
+    color: #FC5959;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.A-Res-Description01 {
+    color: var(--colorBlueMain);
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.363px;
+}
+
+.A-Res-Description02Text {
+    color: var(--colorBlueMain);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.446px;
+}
+
+.A-ResPageAdd {
+    height: 100%;
+}
+
+/* Search bar */
+/* Add your CSS styles here */
+.search-container {
+    position: relative;
+}
+
+#suggestions {
+    position: absolute;
+    list-style: none;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: none;
+    max-height: 200px;
+    overflow-y: auto;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    z-index: 99;
+}
+
+#suggestions li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#suggestions li:hover {
+    background-color: #f5f5f5;
+}
+
+/* card */
+.A-hotelCardTitle {
+    color: var(--colorBlueMain);
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.48px;
+}
+
+.A-hotelCardCityItem {
+    color: #2173a9;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.108px;
+}
+
+.ri-star-fill,
+.ri-star-half-fill {
+    color: #e59c24;
+    font-size: 16px;
+}
+
+.A-hotelCardStar {
+    color: var(--colorGray);
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: -13px;
+}
+
+.A-hotelCardDescription {
+    color: var(--colorBlueMain);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    margin-top: -13px;
+}
+
+.A-hotelCardButton {
+    color: var(--colorBlueMain);
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 50px;
+    font-weight: 500;
+    border: 1.5px solid var(--colorBlueMain);
+    transition: .4s;
+}
+
+.A-hotelCardButton:hover {
+    background-color: var(--colorBlueMain);
+    color: var(--colorBackground);
+}
+
+.A-Hotel-MainHeadindText {
+    color: var(--colorBlueMain);
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 1.74px;
+}
+
+.A-Hotel-SecoText {
+    color: var(--colorBlueMain);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.48px;
+}
+
+.A-cardHotel {
+    border-radius: 18px;
+    background: var(--colorWhite);
+    box-shadow: 0px 4px 18px 0px rgba(34, 87, 122, 0.15);
+    transition: .6s;
+    cursor: pointer;
+}
+
+.A-cardHotel:hover {
+    transform: translateY(-7px);
+}
+
+.A-hotelCardButton5 {
+    margin-top: 20px;
+}
+
+.A-hotelPagination li a {
+    color: var(--colorBlueMain);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.card-img-banner {
+    border-radius: 16px;
+    box-shadow: 0px 3.01913px 13.58607px 0px rgba(47, 86, 112, 0.027);
+    transition: 0.5s;
+}
+
+.card-img-banner:hover {
+    box-shadow: 0px 3.01913px 13.58607px 0px rgba(34, 87, 122, 0.11);
+    transform: scale(1.02);
+  }
+
+
+/* 
+========================================================
+              Footer Section
+========================================================
+*/
+
+.D-FooterContainer {
+    background-color: var(--colorBlueMain);
+}
+
+.footer-heading {
+    color: var(--colorWhite);
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 25px;
+}
+
+.ri-checkbox-circle-line {
+    margin-right: 5px;
+}
+
+.D-FooterLinks {
+    color: #e6e6e6;
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 0.05px;
+    font-size: 15px;
+}
+
+.D-FooterLinks:hover {
+    color: var(--colorYellow);
+}
+
+.ri-heart-3-fill {
+    color: rgb(255, 59, 59);
+}
+
+.D-FooterLinkText {
+    font-weight: 500;
+    letter-spacing: .8px;
+    color: var(--colorYellow) !important;
+}
+
+.D-FooterLinkText:hover {
+    color: var(--colorWhite) !important;
+}
+
+.D-copyright {
+    color: var(--colorWhite);
+}

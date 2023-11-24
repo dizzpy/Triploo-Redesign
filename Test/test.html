@@ -1,162 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Triploo | See the World Your Way</title>
 
-    <!-- Fav Icon -->
-    <link rel="icon" href="images/favIconPng.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Triploo | See the World Your Way</title>
 
-    <!-- Owl caro -->
-    <link rel="stylesheet" href="../css/owl.carousel.min.css">
-    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+  <!-- Fav Icon -->
+  <link rel="icon" href="images/favIconPng.png" />
 
-    <!-- Bootstrap 5 css file -->
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-    />
+  <!-- Owl caro -->
+  <link rel="stylesheet" href="../css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="../css/owl.theme.default.min.css" />
 
-    <!-- External CSS file -->
-    <link rel="stylesheet" href="css/style.css" />
+  <!-- Bootstrap 5 css file -->
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous" />
 
-    <!-- Remix icon cdn -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css"
-    />
+  <!-- External CSS file -->
+  <link rel="stylesheet" href="css/style.css" />
 
-    <!-- Google font link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&family=Lato:wght@700&family=Onest:wght@100;200;300;400;500;600;700;800;900&family=Source+Sans+3:wght@600&display=swap"
-      rel="stylesheet"
-    />
+  <!-- Remix icon cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css" />
 
-    <style>
-        /* carosel start */
-.carosel{
-    margin-top: 100px;
-    height: 550px !important;
-    width: 100%;
-    border-radius: 12px;
-    /* background-image: url("../images/hero images/caroselArugambe.png"); */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: 5s;
+  <!-- Google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&family=Lato:wght@700&family=Onest:wght@100;200;300;400;500;600;700;800;900&family=Source+Sans+3:wght@600&display=swap"
+    rel="stylesheet" />
 
-    animation-name: animate;
-    animation-direction: alternate-reverse;
-    animation-play-state: running;
-    animation-timing-function: ease-in-out;
-    animation-duration: 20s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: infinite;
-}
+  <style>
+    @media (max-width: 768px) {
+      .carousel-inner .carousel-item>div {
+        display: none;
+      }
 
-@keyframes animate {
-    0%{
-        background-image: url("../images/hero images/carosel18Bond.jpg");
+      .carousel-inner .carousel-item>div:first-child {
+        display: block;
+      }
     }
-    20%{
-        background-image: url("../images/hero images/caroselPeacock.jpg");
-    }
-    40%{
-        background-image: url("../images/hero images/caroselElle.jpg");
-    }
-    60%{
-        background-image: url("../images/hero images/caroselArugambe.png");
-    }
-    80%{
-        background-image: url("../images/hero images/caroselSigiriya.jpg");
-    }
-    100%{
-        background-image: url("../images/hero images/caroselTempleOfTooth.jpg");
-    }
-}
 
-.caro-text{
-    color: var(--colorWhite);
-    font-weight: 700;
-    align-items: center;
-    text-align: center;
-    margin-top: 70px;
-}
+    .carousel-inner .carousel-item.active,
+    .carousel-inner .carousel-item-start,
+    .carousel-inner .carousel-item-next,
+    .carousel-inner .carousel-item-prev {
+      display: flex;
+    }
 
-.caro-gradient{
-    margin-top: 100px;
-    height: 550px !important;
-    width: 100%;
-    border-radius: 12px;
-    background: linear-gradient(180deg, #023B4D -51.26%, rgba(5, 54, 73, 0.00) 100%);
-}
-    </style>
-  </head>
-  <body>
+    /* display 4 */
+    @media (min-width: 768px) {
 
-    <section>
-        <div class="container hero-section">
-          <div class="caro-gradient">
-            <div class="carosel">
-              <div class="space-tb-10"></div>
-              <div>
-                <!-- <h1 class="caro-text">
-                  Explore Galle's historic Dutch fort, set 
-                  <br> against the backdrop.
-                </h1> -->
-              </div>
+      .carousel-inner .carousel-item-right.active,
+      .carousel-inner .carousel-item-next,
+      .carousel-item-next:not(.carousel-item-start) {
+        transform: translateX(25%) !important;
+      }
+
+      .carousel-inner .carousel-item-left.active,
+      .carousel-item-prev:not(.carousel-item-end),
+      .active.carousel-item-start,
+      .carousel-item-prev:not(.carousel-item-end) {
+        transform: translateX(-25%) !important;
+      }
+
+      .carousel-item-next.carousel-item-start,
+      .active.carousel-item-end {
+        transform: translateX(0) !important;
+      }
+
+      .carousel-inner .carousel-item-prev,
+      .carousel-item-prev:not(.carousel-item-end) {
+        transform: translateX(-25%) !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <div id="myCarousel" class="carousel slide container" data-bs-ride="carousel">
+      <div class="carousel-inner w-100">
+        <div class="carousel-item active">
+          <div class="col-md-3">
+            <div class="card card-body">
+              <img class="img-fluid" src="http://placehold.it/380?text=1" />
             </div>
           </div>
-          
-          <!-- search bar -->
-          <div class="container d-flex justify-content-center">
-            <div class="main-search-bar text-center">
-              <div class="back-box">
-                <!-- links here -->
-                <div class="back-box-links">
-                  <ul class="mx-auto"> <!-- Updated class from 'mr-auto' to 'mx-auto' -->
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Places</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Hotels</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Activities</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Restuarents</a>
-                    </li>
-                  </ul>
-                </div>
-                <!-- straight line -->
-                <div class="line-hr mx-auto"></div>
-                <!-- search bar and search button -->
-                <div class="search-area">
-                  <form class="form-inline my-2 my-lg-0">
-                    <input class="mr-sm-2 searchBar" type="search" placeholder="Find Your Destination" aria-label="Search">
-                    <div class="justify-content-end d-flex">
-                      <button class="button my-2 my-sm-0 ml-2" type="submit">Search</button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>        
         </div>
-      </section>
-    
-    
+        <div class="carousel-item">
+          <div class="col-md-3">
+            <div class="card card-body">
+              <img class="img-fluid" src="http://placehold.it/380?text=2" />
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="col-md-3">
+            <div class="card card-body">
+              <img class="img-fluid" src="http://placehold.it/380?text=3" />
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="col-md-3">
+            <div class="card card-body">
+              <img class="img-fluid" src="http://placehold.it/380?text=4" />
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="col-md-3">
+            <div class="card card-body">
+              <img class="img-fluid" src="http://placehold.it/380?text=5" />
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="col-md-3">
+            <div class="card card-body">
+              <img class="img-fluid" src="http://placehold.it/380?text=6" />
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="col-md-3">
+            <div class="card card-body">
+              <img class="img-fluid" src="http://placehold.it/380?text=7" />
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="col-md-3">
+            <div class="card card-body">
+              <img class="img-fluid" src="http://placehold.it/380?text=8" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
 
-    <!-- Bootstrap 5 js file -->
-    <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap 5 js file -->
+  <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
 
-    <!-- External JS file -->
-    <script src="js/script.js"></script>
-  </body>
+  <!-- External JS file -->
+  <script>
+    // var myCarousel = document.querySelector('#myCarousel')
+    // var carousel = new bootstrap.Carousel(myCarousel, {
+    //   interval: 100000
+    // })
+
+    $('.carousel .carousel-item').each(function () {
+      var minPerSlide = 4;
+      var next = $(this).next();
+      if (!next.length) {
+        next = $(this).siblings(':first');
+      }
+      next.children(':first-child').clone().appendTo($(this));
+
+      for (var i = 0; i < minPerSlide; i++) {
+        next = next.next();
+        if (!next.length) {
+          next = $(this).siblings(':first');
+        }
+
+        next.children(':first-child').clone().appendTo($(this));
+      }
+    });
+
+  </script>
+</body>
+
 </html>
