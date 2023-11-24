@@ -78,40 +78,40 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Triploo | Login With Your Account</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Triploo | Login With Your Account</title>
 
-    <!-- Fav Icon -->
-    <link rel="icon" href="/images/logos/favIconPng.png" />
+  <!-- Fav Icon -->
+  <link rel="icon" href="/images/logos/favIconPng.png" />
 
-    <!-- Bootstrap 5 css file -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <!-- Bootstrap 5 css file -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
 
-    <!-- External CSS file -->
-    <link rel="stylesheet" href="../css/style.css" />
+  <!-- External CSS file -->
+  <link rel="stylesheet" href="../css/style.css" />
 
-    <!-- Utilities Css file -->
-    <link rel="stylesheet" href="../css/utilities.css" />
+  <!-- Utilities Css file -->
+  <link rel="stylesheet" href="../css/utilities.css" />
 
-    <!-- Dizzpy custom button  -->
-    <link rel="stylesheet" href="../css/dizzpayButton.css" />
+  <!-- Dizzpy custom button  -->
+  <link rel="stylesheet" href="../css/dizzpayButton.css" />
 
-    <!-- About us CSS -->
-    <link rel="stylesheet" href="../css/pages/about-us.css" />
+  <!-- About us CSS -->
+  <link rel="stylesheet" href="../css/pages/about-us.css" />
 
-    <!-- Login and Singup button css file -->
-    <link rel="stylesheet" href="../css/pages/login-singup.css">
+  <!-- Login and Singup button css file -->
+  <link rel="stylesheet" href="../css/pages/login-singup.css">
 
-    <!-- Remix icon cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css" />
+  <!-- Remix icon cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.min.css" />
 
-    <!-- Google font link -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&family=Lato:wght@700&family=Onest:wght@100;200;300;400;500;600;700;800;900&family=Source+Sans+3:wght@600&display=swap"
-        rel="stylesheet" />
+  <!-- Google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&family=Lato:wght@700&family=Onest:wght@100;200;300;400;500;600;700;800;900&family=Source+Sans+3:wght@600&display=swap"
+    rel="stylesheet" />
 </head>
 
 <body>
@@ -154,7 +154,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             </li>
           </ul>
           <div class="d-flex justify-content-center g-4">
-              
+
           </div>
         </div>
       </nav>
@@ -168,74 +168,64 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 
 
-  <form method="post" enctype="multipart/form-data">
-  <div class="col-12 col-md-5 col-lg-6">
-                                <div class="card px-4 py-3">
-                                    <h1 class="Log-MainText mt-4">Welcome Back</h1>
-                                    <p class="Log-SubHeading">We are really happy to see you again!</p>
+  <div class="container d-flex justify-content-center align-items-center vh-100">
+    <form method="post" enctype="multipart/form-data" class="col-12 col-md-5 col-lg-6">
+        <div class="card px-4 py-3">
+            <h1 class="Log-MainText mt-4">Welcome Back</h1>
+            <p class="Log-SubHeading">We are really happy to see you again!</p>
 
-                                    <!-- Search box section -->
-                                    <div class="Log-InputBoxs">
-                                        <!-- Full name -->
-                                        <div class="mb-4">
-                                            <label for="username" class="form-label">
-                                                <span class="j-SearchBarLabel">UserName <span
-                                                        class="j-redStarMark">*</span></span>
-                                            </label>
-                                            <input name="username" type="text" class="form-control form-input" id="username"
-                                                placeholder="JohnDoe" required>
-                                        </div>
-                                        <!-- User name -->
-                                        <div class="mb-4">
-                                            <label for="username" class="form-label">
-                                                <span class="j-SearchBarLabel">Email <span
-                                                        class="j-redStarMark">*</span></span>
-                                            </label>
-                                            <input name="email" type="email" class="form-control form-input" id="username"
-                                                placeholder="johndoe123@email.com" required>
-                                        </div>
-                                        <!-- Password -->
-                                        <div class="mb-4">
-                                            <label for="password" class="form-label">
-                                                <span class="j-SearchBarLabel">Password <span
-                                                        class="j-redStarMark">*</span></span>
-                                            </label>
-                                            <input name="password" type="password" class="form-control form-input" id="password"
-                                                placeholder="Password" required>
-                                        </div>
+            <!-- Search box section -->
+            <div class="Log-InputBoxs">
+                <!-- Full name -->
+                <div class="mb-4">
+                    <label for="username" class="form-label">
+                        <span class="j-SearchBarLabel">UserName <span class="j-redStarMark">*</span></span>
+                    </label>
+                    <input name="username" type="text" class="form-control form-input" id="username" placeholder="JohnDoe" required>
+                </div>
+                <!-- User name -->
+                <div class="mb-4">
+                    <label for="username" class="form-label">
+                        <span class="j-SearchBarLabel">Email <span class="j-redStarMark">*</span></span>
+                    </label>
+                    <input name="email" type="email" class="form-control form-input" id="username" placeholder="johndoe123@email.com" required>
+                </div>
+                <!-- Password -->
+                <div class="mb-4">
+                    <label for="password" class="form-label">
+                        <span class="j-SearchBarLabel">Password <span class="j-redStarMark">*</span></span>
+                    </label>
+                    <input name="password" type="password" class="form-control form-input" id="password" placeholder="Password" required>
+                </div>
 
-                                        <!-- profile picture -->
-                                        <div class="mb-4">
-                                            <label for="password" class="form-label">
-                                                <span class="j-SearchBarLabel">Profile Picture <span
-                                                        class="j-redStarMark">*</span></span>
-                                            </label>
-                                            <br>
-                                            <input type="file" name="profile_picture">
-                                        </div>
+                <!-- profile picture -->
+                <div class="mb-4">
+                    <label for="password" class="form-label">
+                        <span class="j-SearchBarLabel">Profile Picture <span class="j-redStarMark">*</span></span>
+                    </label>
+                    <br>
+                    <input type="file" name="profile_picture">
+                </div>
 
+                <!-- checkbox -->
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label j-SearchBarLabel" for="flexCheckDefault">
+                        Agree with Privacy Policies
+                    </label>
+                </div>
+            </div>
+            <!-- Login button -->
+            <div class="Log-LoginButton text-center mt-3 mb-3">
+                <button class="D-Button-Primary btn-block" type="submit">Register</button>
+            </div>
 
-
-
-
-                                        <!-- checkbox -->
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                            <label class="form-check-label j-SearchBarLabel" for="flexCheckDefault">
-                                                Agree with Privacy Policies
-                                            </label>
-                                          </div>
-                                    </div>
-                                    <!-- Login button -->
-                                    <div class="Log-LoginButton text-center mt-3 mb-3">
-                                        <button class="D-Button-Primary btn-block" type="submit">Register</button>
-                                    </div>
-
-                                    
-                                    <a href="login.php"><p class="Log-SubHeading mt-3 text-center">Click to Login</p></a>
-                                </div>
-                            </div>
-  </form>
+            <a href="login.php">
+                <p class="Log-SubHeading mt-3 text-center">Click to Login</p>
+            </a>
+        </div>
+    </form>
+</div>
 
 
 
@@ -246,12 +236,13 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 
 
 
-  
 
-    <!-- Bootstrap 5 js file -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-    <!-- components js -->
+
+  <!-- Bootstrap 5 js file -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- components js -->
 </body>
 
 </html>
