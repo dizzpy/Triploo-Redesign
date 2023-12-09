@@ -6,5 +6,5 @@
 <br>
 
 <p align="center">
-  <a href="https://earthly-azimuths.000webhostapp.com/" target="_blank">Live Demo Here ⇗ </a>
+  <a href="https://triploo.site/" target="_blank">Live Demo Here ⇗ </a>
 </p>
